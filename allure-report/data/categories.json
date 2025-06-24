@@ -1,0 +1,41 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError: assert 200 == 401\n +  where 200 = <Response [200]>.status_code\n +  and   401 = StatusCodes.UNAUTHORIZED",
+      "children" : [ {
+        "name" : "Без авторизации → 401",
+        "uid" : "1b8add1c3d6f19da",
+        "parentUid" : "c2e3f5aa4c806e710373c9feb277d52f",
+        "status" : "failed",
+        "time" : {
+          "start" : 1750777952396,
+          "stop" : 1750777952580,
+          "duration" : 184
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "c2e3f5aa4c806e710373c9feb277d52f"
+    }, {
+      "name" : "AssertionError: assert 400 == 500\n +  where 400 = <Response [400]>.status_code\n +  and   500 = StatusCodes.INTERNAL_ERROR",
+      "children" : [ {
+        "name" : "С неверным хешем ингредиентов → 500",
+        "uid" : "e255fe8e9ba4cba4",
+        "parentUid" : "c160eda8baf840bc0f1d34a630db0f9d",
+        "status" : "failed",
+        "time" : {
+          "start" : 1750777953577,
+          "stop" : 1750777953669,
+          "duration" : 92
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "c160eda8baf840bc0f1d34a630db0f9d"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ]
+}

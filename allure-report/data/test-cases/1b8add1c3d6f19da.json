@@ -1,0 +1,142 @@
+{
+  "uid" : "1b8add1c3d6f19da",
+  "name" : "Без авторизации → 401",
+  "fullName" : "tests.test_orders.TestOrders#test_order_without_auth",
+  "historyId" : "cc0a9e7f208e7fcf691bbe2bd607e777",
+  "time" : {
+    "start" : 1750777952396,
+    "stop" : 1750777952580,
+    "duration" : 184
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert 200 == 401\n +  where 200 = <Response [200]>.status_code\n +  and   401 = StatusCodes.UNAUTHORIZED",
+  "statusTrace" : "self = <tests.test_orders.TestOrders object at 0x000001FE86800890>, api_client = <api_client.ApiClient object at 0x000001FE867CB200>\n\n    @allure.title(\"Без авторизации → 401\")\n    def test_order_without_auth(self, api_client):\n        ings = api_client.get_ingredients().json()[\"data\"]\n        resp = api_client.create_order([ings[0][\"_id\"]])\n>       assert resp.status_code == StatusCodes.UNAUTHORIZED\nE       assert 200 == 401\nE        +  where 200 = <Response [200]>.status_code\nE        +  and   401 = StatusCodes.UNAUTHORIZED\n\ntests\\test_orders.py:25: AssertionError",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "api_client",
+    "time" : {
+      "start" : 1750777948044,
+      "stop" : 1750777948044,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1750777948016,
+      "stop" : 1750777948044,
+      "duration" : 28
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert 200 == 401\n +  where 200 = <Response [200]>.status_code\n +  and   401 = StatusCodes.UNAUTHORIZED",
+    "statusTrace" : "self = <tests.test_orders.TestOrders object at 0x000001FE86800890>, api_client = <api_client.ApiClient object at 0x000001FE867CB200>\n\n    @allure.title(\"Без авторизации → 401\")\n    def test_order_without_auth(self, api_client):\n        ings = api_client.get_ingredients().json()[\"data\"]\n        resp = api_client.create_order([ings[0][\"_id\"]])\n>       assert resp.status_code == StatusCodes.UNAUTHORIZED\nE       assert 200 == 401\nE        +  where 200 = <Response [200]>.status_code\nE        +  and   401 = StatusCodes.UNAUTHORIZED\n\ntests\\test_orders.py:25: AssertionError",
+    "steps" : [ {
+      "name" : "Get ingredients list",
+      "time" : {
+        "start" : 1750777952396,
+        "stop" : 1750777952485,
+        "duration" : 89
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Create order",
+      "time" : {
+        "start" : 1750777952485,
+        "stop" : 1750777952578,
+        "duration" : 93
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "ingredients",
+        "value" : "['61c0c5a71d1f82001bdaaa6d']"
+      }, {
+        "name" : "token",
+        "value" : "None"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "Создание заказа"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_orders"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestOrders"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-47CL42P"
+  }, {
+    "name" : "thread",
+    "value" : "19376-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_orders"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "1b8add1c3d6f19da.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,121 @@
+[ {
+  "uid" : "9c4c86cae8c1f77b",
+  "name" : "Вход с неверными данными → 401",
+  "time" : {
+    "start" : 1750777949132,
+    "stop" : 1750777949222,
+    "duration" : 90
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1b8add1c3d6f19da",
+  "name" : "Без авторизации → 401",
+  "time" : {
+    "start" : 1750777952396,
+    "stop" : 1750777952580,
+    "duration" : 184
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "13c964a6e64987",
+  "name" : "Уникальный пользователь → 200 OK",
+  "time" : {
+    "start" : 1750777954166,
+    "stop" : 1750777954345,
+    "duration" : 179
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8e18411383963293",
+  "name" : "Вход с неверными данными → 401",
+  "time" : {
+    "start" : 1750777949232,
+    "stop" : 1750777949322,
+    "duration" : 90
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a3749c6b7c1e49aa",
+  "name" : "Без ингредиентов → 400",
+  "time" : {
+    "start" : 1750777952819,
+    "stop" : 1750777952908,
+    "duration" : 89
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "22341fe60dad0f4a",
+  "name" : "Успешный вход существующего пользователя → 200",
+  "time" : {
+    "start" : 1750777948484,
+    "stop" : 1750777948657,
+    "duration" : 173
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c2bba1bcdf834f4b",
+  "name" : "Регистрация без обязательного поля → 403",
+  "time" : {
+    "start" : 1750777955190,
+    "stop" : 1750777955283,
+    "duration" : 93
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "44d6abc857a27b38",
+  "name" : "Регистрация без обязательного поля → 403",
+  "time" : {
+    "start" : 1750777955104,
+    "stop" : 1750777955189,
+    "duration" : 85
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "814b8c5eba9df91d",
+  "name" : "Регистрация без обязательного поля → 403",
+  "time" : {
+    "start" : 1750777955286,
+    "stop" : 1750777955373,
+    "duration" : 87
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1a703137f585ac21",
+  "name" : "С авторизацией и ингредиентами → 200",
+  "time" : {
+    "start" : 1750777949510,
+    "stop" : 1750777951927,
+    "duration" : 2417
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8e9de178c674ad5f",
+  "name" : "Повторная регистрация существующего пользователя → 403",
+  "time" : {
+    "start" : 1750777954529,
+    "stop" : 1750777954623,
+    "duration" : 94
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e255fe8e9ba4cba4",
+  "name" : "С неверным хешем ингредиентов → 500",
+  "time" : {
+    "start" : 1750777953577,
+    "stop" : 1750777953669,
+    "duration" : 92
+  },
+  "status" : "failed",
+  "severity" : "normal"
+} ]
