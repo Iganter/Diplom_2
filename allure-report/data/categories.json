@@ -7,13 +7,13 @@
       "name" : "AssertionError: assert 200 == 401\n +  where 200 = <Response [200]>.status_code\n +  and   401 = StatusCodes.UNAUTHORIZED",
       "children" : [ {
         "name" : "Без авторизации → 401",
-        "uid" : "1b8add1c3d6f19da",
+        "uid" : "1856aa6543269d3f",
         "parentUid" : "c2e3f5aa4c806e710373c9feb277d52f",
         "status" : "failed",
         "time" : {
-          "start" : 1750777952396,
-          "stop" : 1750777952580,
-          "duration" : 184
+          "start" : 1750948448481,
+          "stop" : 1750948448571,
+          "duration" : 90
         },
         "flaky" : false,
         "parameters" : [ ]
@@ -23,13 +23,13 @@
       "name" : "AssertionError: assert 400 == 500\n +  where 400 = <Response [400]>.status_code\n +  and   500 = StatusCodes.INTERNAL_ERROR",
       "children" : [ {
         "name" : "С неверным хешем ингредиентов → 500",
-        "uid" : "e255fe8e9ba4cba4",
+        "uid" : "a68fd69531f99f1f",
         "parentUid" : "c160eda8baf840bc0f1d34a630db0f9d",
         "status" : "failed",
         "time" : {
-          "start" : 1750777953577,
-          "stop" : 1750777953669,
-          "duration" : 92
+          "start" : 1750948449358,
+          "stop" : 1750948449406,
+          "duration" : 48
         },
         "flaky" : false,
         "parameters" : [ ]
