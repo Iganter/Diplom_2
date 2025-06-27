@@ -1,0 +1,121 @@
+[ {
+  "uid" : "9731eed5e948abe",
+  "name" : "Регистрация без обязательного поля → 403",
+  "time" : {
+    "start" : 1750948450707,
+    "stop" : 1750948450744,
+    "duration" : 37
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "fe8bf3b2c9e5f85b",
+  "name" : "Вход с неверными данными → 401",
+  "time" : {
+    "start" : 1750948445420,
+    "stop" : 1750948445465,
+    "duration" : 45
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1e6a11a42cfa39e6",
+  "name" : "Регистрация без обязательного поля → 403",
+  "time" : {
+    "start" : 1750948450615,
+    "stop" : 1750948450655,
+    "duration" : 40
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1fe37ed48f7922dc",
+  "name" : "Успешный вход существующего пользователя → 200",
+  "time" : {
+    "start" : 1750948444896,
+    "stop" : 1750948445005,
+    "duration" : 109
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1856aa6543269d3f",
+  "name" : "Без авторизации → 401",
+  "time" : {
+    "start" : 1750948448481,
+    "stop" : 1750948448571,
+    "duration" : 90
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "a68fd69531f99f1f",
+  "name" : "С неверным хешем ингредиентов → 500",
+  "time" : {
+    "start" : 1750948449358,
+    "stop" : 1750948449406,
+    "duration" : 48
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "8d2d631e6982fc43",
+  "name" : "Повторная регистрация существующего пользователя → 403",
+  "time" : {
+    "start" : 1750948450126,
+    "stop" : 1750948450172,
+    "duration" : 46
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d662a46fdde39449",
+  "name" : "Без ингредиентов → 400",
+  "time" : {
+    "start" : 1750948448780,
+    "stop" : 1750948448832,
+    "duration" : 52
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7cdb6f777bc590c7",
+  "name" : "Вход с неверными данными → 401",
+  "time" : {
+    "start" : 1750948445471,
+    "stop" : 1750948445512,
+    "duration" : 41
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d5defabf30b26816",
+  "name" : "С авторизацией и ингредиентами → 200",
+  "time" : {
+    "start" : 1750948445648,
+    "stop" : 1750948448016,
+    "duration" : 2368
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "221ccfc8868e96f4",
+  "name" : "Уникальный пользователь → 200 OK",
+  "time" : {
+    "start" : 1750948449855,
+    "stop" : 1750948449998,
+    "duration" : 143
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c6cf5a35e7ce5a84",
+  "name" : "Регистрация без обязательного поля → 403",
+  "time" : {
+    "start" : 1750948450660,
+    "stop" : 1750948450705,
+    "duration" : 45
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

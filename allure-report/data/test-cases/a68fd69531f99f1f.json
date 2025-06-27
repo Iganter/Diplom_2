@@ -1,0 +1,193 @@
+{
+  "uid" : "a68fd69531f99f1f",
+  "name" : "С неверным хешем ингредиентов → 500",
+  "fullName" : "tests.test_orders.TestOrders#test_order_invalid_hash",
+  "historyId" : "c7f329ba0d84c0c87641abf528ddccbd",
+  "time" : {
+    "start" : 1750948449358,
+    "stop" : 1750948449406,
+    "duration" : 48
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert 400 == 500\n +  where 400 = <Response [400]>.status_code\n +  and   500 = StatusCodes.INTERNAL_ERROR",
+  "statusTrace" : "self = <tests.test_orders.TestOrders object at 0x000002012C866B40>, api_client = <api_client.ApiClient object at 0x000002012C8B3E30>\nregistered_user = ({'email': 'longin26@yandex.ru', 'name': 'Натан', 'password': 'ep9_SOKt#O'}, 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ...TYwOWVkMjgwMDAxYjYzNzU1MCIsImlhdCI6MTc1MDk0ODQ0OCwiZXhwIjoxNzUwOTQ5NjQ4fQ.r_KuMK-rG4zuDqxgOUhvLNS1g0LdkfkS5hSLbOEVm04')\n\n    @allure.title(\"С неверным хешем ингредиентов → 500\")\n    def test_order_invalid_hash(self, api_client, registered_user):\n        _, token = registered_user\n        resp = api_client.create_order([\"invalid_hash\"], token=token)\n>       assert resp.status_code == StatusCodes.INTERNAL_ERROR\nE       assert 400 == 500\nE        +  where 400 = <Response [400]>.status_code\nE        +  and   500 = StatusCodes.INTERNAL_ERROR\n\ntests\\test_orders.py:38: AssertionError",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1750948444584,
+      "stop" : 1750948444612,
+      "duration" : 28
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "registered_user",
+    "time" : {
+      "start" : 1750948449259,
+      "stop" : 1750948449357,
+      "duration" : 98
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Register user",
+      "time" : {
+        "start" : 1750948449259,
+        "stop" : 1750948449357,
+        "duration" : 98
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "user_data",
+        "value" : "{'email': 'longin26@yandex.ru', 'password': 'ep9_SOKt#O', 'name': 'Натан'}"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 1
+  }, {
+    "name" : "api_client",
+    "time" : {
+      "start" : 1750948444612,
+      "stop" : 1750948444612,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert 400 == 500\n +  where 400 = <Response [400]>.status_code\n +  and   500 = StatusCodes.INTERNAL_ERROR",
+    "statusTrace" : "self = <tests.test_orders.TestOrders object at 0x000002012C866B40>, api_client = <api_client.ApiClient object at 0x000002012C8B3E30>\nregistered_user = ({'email': 'longin26@yandex.ru', 'name': 'Натан', 'password': 'ep9_SOKt#O'}, 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ...TYwOWVkMjgwMDAxYjYzNzU1MCIsImlhdCI6MTc1MDk0ODQ0OCwiZXhwIjoxNzUwOTQ5NjQ4fQ.r_KuMK-rG4zuDqxgOUhvLNS1g0LdkfkS5hSLbOEVm04')\n\n    @allure.title(\"С неверным хешем ингредиентов → 500\")\n    def test_order_invalid_hash(self, api_client, registered_user):\n        _, token = registered_user\n        resp = api_client.create_order([\"invalid_hash\"], token=token)\n>       assert resp.status_code == StatusCodes.INTERNAL_ERROR\nE       assert 400 == 500\nE        +  where 400 = <Response [400]>.status_code\nE        +  and   500 = StatusCodes.INTERNAL_ERROR\n\ntests\\test_orders.py:38: AssertionError",
+    "steps" : [ {
+      "name" : "Create order",
+      "time" : {
+        "start" : 1750948449358,
+        "stop" : 1750948449405,
+        "duration" : 47
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "ingredients",
+        "value" : "['invalid_hash']"
+      }, {
+        "name" : "token",
+        "value" : "'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4NWQ1YTYwOWVkMjgwMDAxYjYzNzU1MCIsImlhdCI6MTc1MDk0ODQ0OCwiZXhwIjoxNzUwOTQ5NjQ4fQ.r_KuMK-rG4zuDqxgOUhvLNS1g0LdkfkS5hSLbOEVm04'"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true,
+    "stepsCount" : 1
+  },
+  "afterStages" : [ {
+    "name" : "registered_user::0",
+    "time" : {
+      "start" : 1750948449413,
+      "stop" : 1750948449837,
+      "duration" : 424
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Delete user",
+      "time" : {
+        "start" : 1750948449413,
+        "stop" : 1750948449837,
+        "duration" : 424
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "token",
+        "value" : "'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4NWQ1YTYwOWVkMjgwMDAxYjYzNzU1MCIsImlhdCI6MTc1MDk0ODQ0OCwiZXhwIjoxNzUwOTQ5NjQ4fQ.r_KuMK-rG4zuDqxgOUhvLNS1g0LdkfkS5hSLbOEVm04'"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 1
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "Создание заказа"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_orders"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestOrders"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-47CL42P"
+  }, {
+    "name" : "thread",
+    "value" : "22616-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_orders"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "a68fd69531f99f1f.json",
+  "parameterValues" : [ ]
+}

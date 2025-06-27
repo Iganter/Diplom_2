@@ -1,0 +1,157 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "DESKTOP-47CL42P",
+    "children" : [ {
+      "name" : "22616-MainThread",
+      "children" : [ {
+        "name" : "Успешный вход существующего пользователя → 200",
+        "uid" : "1fe37ed48f7922dc",
+        "parentUid" : "c4f76837c64bca910aea9d990856a06f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1750948444896,
+          "stop" : 1750948445005,
+          "duration" : 109
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Вход с неверными данными → 401",
+        "uid" : "7cdb6f777bc590c7",
+        "parentUid" : "c4f76837c64bca910aea9d990856a06f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1750948445471,
+          "stop" : 1750948445512,
+          "duration" : 41
+        },
+        "flaky" : false,
+        "parameters" : [ "''", "''" ]
+      }, {
+        "name" : "Без ингредиентов → 400",
+        "uid" : "d662a46fdde39449",
+        "parentUid" : "c4f76837c64bca910aea9d990856a06f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1750948448780,
+          "stop" : 1750948448832,
+          "duration" : 52
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "С неверным хешем ингредиентов → 500",
+        "uid" : "a68fd69531f99f1f",
+        "parentUid" : "c4f76837c64bca910aea9d990856a06f",
+        "status" : "failed",
+        "time" : {
+          "start" : 1750948449358,
+          "stop" : 1750948449406,
+          "duration" : 48
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "С авторизацией и ингредиентами → 200",
+        "uid" : "d5defabf30b26816",
+        "parentUid" : "c4f76837c64bca910aea9d990856a06f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1750948445648,
+          "stop" : 1750948448016,
+          "duration" : 2368
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Регистрация без обязательного поля → 403",
+        "uid" : "9731eed5e948abe",
+        "parentUid" : "c4f76837c64bca910aea9d990856a06f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1750948450707,
+          "stop" : 1750948450744,
+          "duration" : 37
+        },
+        "flaky" : false,
+        "parameters" : [ "'name'" ]
+      }, {
+        "name" : "Регистрация без обязательного поля → 403",
+        "uid" : "1e6a11a42cfa39e6",
+        "parentUid" : "c4f76837c64bca910aea9d990856a06f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1750948450615,
+          "stop" : 1750948450655,
+          "duration" : 40
+        },
+        "flaky" : false,
+        "parameters" : [ "'email'" ]
+      }, {
+        "name" : "Без авторизации → 401",
+        "uid" : "1856aa6543269d3f",
+        "parentUid" : "c4f76837c64bca910aea9d990856a06f",
+        "status" : "failed",
+        "time" : {
+          "start" : 1750948448481,
+          "stop" : 1750948448571,
+          "duration" : 90
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Регистрация без обязательного поля → 403",
+        "uid" : "c6cf5a35e7ce5a84",
+        "parentUid" : "c4f76837c64bca910aea9d990856a06f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1750948450660,
+          "stop" : 1750948450705,
+          "duration" : 45
+        },
+        "flaky" : false,
+        "parameters" : [ "'password'" ]
+      }, {
+        "name" : "Повторная регистрация существующего пользователя → 403",
+        "uid" : "8d2d631e6982fc43",
+        "parentUid" : "c4f76837c64bca910aea9d990856a06f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1750948450126,
+          "stop" : 1750948450172,
+          "duration" : 46
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Уникальный пользователь → 200 OK",
+        "uid" : "221ccfc8868e96f4",
+        "parentUid" : "c4f76837c64bca910aea9d990856a06f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1750948449855,
+          "stop" : 1750948449998,
+          "duration" : 143
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Вход с неверными данными → 401",
+        "uid" : "fe8bf3b2c9e5f85b",
+        "parentUid" : "c4f76837c64bca910aea9d990856a06f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1750948445420,
+          "stop" : 1750948445465,
+          "duration" : 45
+        },
+        "flaky" : false,
+        "parameters" : [ "'wrong@example.com'", "'Password123!'" ]
+      } ],
+      "uid" : "c4f76837c64bca910aea9d990856a06f"
+    } ],
+    "uid" : "15cde0266a8d91a0df5667306f103cc7"
+  } ]
+}
